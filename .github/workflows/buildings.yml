@@ -116,7 +116,7 @@ jobs:
           KAGGLE_MESSAGE: world-buildings ${{ matrix.region }}
           CARD: hf/world-buildings.md
         run: >-
-          python kaggle_mirror.py helenkwok/world-buildings-${{ matrix.region }} "AlreadyOpen: World buildings ${{ matrix.region }}"
+          python kaggle_mirror.py helenkwok/world-buildings-${{ matrix.region }} "Milleleaf: World buildings ${{ matrix.region }}"
           data/out/${{ matrix.region }}/*.parquet data/out/${{ matrix.region }}.pmtiles
   finalize:
     needs: region

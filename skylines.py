@@ -31,7 +31,7 @@ SUPERTALL, MAX_STOREY = 300, 12  # metres: >= SUPERTALL needs Wikidata or a 2.5-
 
 # Official building sources, by GISCO country id. They replace Overture inside that country.
 OFFICIAL = {
-    'HK': {'title': 'Lands Department buildings, via AlreadyOpen hk-buildings',
+    'HK': {'title': 'Lands Department buildings, via Milleleaf hk-buildings',
            'parquet': 'https://huggingface.co/datasets/milleleaf/hk-buildings/resolve/main/buildings.parquet',
            'height': 'height_m',
            'select': "BuildingCSUID, height_m, 0, BuildingNameEN, 'landsd', Storeys, geometry",
@@ -156,7 +156,7 @@ def wikidata():
     rows = ['item,h,coord']
     for c in WD_CLASSES:
         url = WIKIDATA + '?' + urllib.parse.urlencode({'query': WD_QUERY.format(c=c)})
-        hdr = {'Accept': 'text/csv', 'User-Agent': 'AlreadyOpen-world-skylines (https://github.com/milleleaf/world-skylines)'}
+        hdr = {'Accept': 'text/csv', 'User-Agent': 'Milleleaf-world-skylines (https://github.com/milleleaf/world-skylines)'}
         for n in range(4):
             body = urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=120).read().decode()
             if 'Exception' not in body:  # a WDQS timeout still answers 200: partial rows, then a Java stack trace

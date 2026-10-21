@@ -12,7 +12,7 @@ tags:
 # World buildings
 
 Every building in the world that has a known height, with every field its source publishes, rebuilt for each Overture Maps
-release by [AlreadyOpen/world-buildings](https://github.com/milleleaf/world-buildings). About 206 million buildings and
+release by [milleleaf/world-buildings](https://github.com/milleleaf/world-buildings). About 206 million buildings and
 building parts.
 
 The world is split into regions (consecutive Overture files, which Overture sorts by location). One region per source

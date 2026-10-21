@@ -5,9 +5,9 @@ Every building in the world with a known height of 30 m or more, as 3D-ready vec
 
 Overture's own `buildings.pmtiles` carries heights only at zoom 14, so from further out every city is flat. This fills that gap.
 Official building data replaces Overture inside its country: Hong Kong from
-[AlreadyOpen/hk-buildings](https://huggingface.co/datasets/milleleaf/hk-buildings), the Netherlands from [3DBAG](https://3dbag.nl).
+[milleleaf/hk-buildings](https://huggingface.co/datasets/milleleaf/hk-buildings), the Netherlands from [3DBAG](https://3dbag.nl).
 
-Part of [AlreadyOpen](https://github.com/milleleaf): open, re-runnable pipelines over public data.
+Part of [Milleleaf](https://github.com/milleleaf): open, re-runnable pipelines over public data.
 
 | Output | Where | Format |
 |---|---|---|

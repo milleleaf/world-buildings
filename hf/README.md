@@ -12,7 +12,7 @@ tags:
 # World skylines
 
 Every building in the world with a known height of 30 m or more, with its footprint, height, base height and name, rebuilt
-for each Overture Maps release by [AlreadyOpen/world-skylines](https://github.com/milleleaf/world-skylines).
+for each Overture Maps release by [milleleaf/world-skylines](https://github.com/milleleaf/world-skylines).
 
 Overture's own building tiles carry heights only at zoom 14, so cities look flat from further out. This layer fills zooms 6-13.
 

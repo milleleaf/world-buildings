@@ -74,7 +74,7 @@ jobs:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
           KAGGLE_MESSAGE: Overture ${{ steps.rel.outputs.release }}
         run: >-
-          python kaggle_mirror.py helenkwok/world-skylines "AlreadyOpen: World skylines"
+          python kaggle_mirror.py helenkwok/world-skylines "Milleleaf: World skylines"
           data/out/*.parquet data/out/*.pmtiles data/out/manifest.json
       - name: keep-alive commit
         run: |
