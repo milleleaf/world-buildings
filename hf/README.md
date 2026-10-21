@@ -12,7 +12,7 @@ tags:
 # World skylines
 
 Every building in the world with a known height of 30 m or more, with its footprint, height, base height and name, rebuilt
-for each Overture Maps release by [AlreadyOpen/world-skylines](https://github.com/AlreadyOpen/world-skylines).
+for each Overture Maps release by [AlreadyOpen/world-skylines](https://github.com/milleleaf/world-skylines).
 
 Overture's own building tiles carry heights only at zoom 14, so cities look flat from further out. This layer fills zooms 6-13.
 
@@ -20,7 +20,7 @@ One file per source, never merged, so each keeps its own licence:
 
 - Dataset `overture.parquet` (and one per official source, e.g. `hk.parquet`): `id, height, min_height, name, source, geometry`
   (GeoParquet, WGS84), tallest first
-- Bucket [alreadyopen/world-skylines](https://huggingface.co/buckets/alreadyopen/world-skylines) `overture.pmtiles` (and
+- Bucket [alreadyopen/world-skylines](https://huggingface.co/buckets/milleleaf/world-skylines) `overture.pmtiles` (and
   `hk.pmtiles`, ...): vector tiles z6-13, layer `skylines`, for MapLibre `fill-extrusion` (height `height`, base `min_height`).
   Overture's file leaves out every country that has an official file.
 - `manifest.json` (dataset and bucket): the Overture release, row counts per file, sha256 and size of each output, and the sources

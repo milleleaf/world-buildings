@@ -12,7 +12,7 @@ tags:
 # World buildings
 
 Every building in the world that has a known height, with every field its source publishes, rebuilt for each Overture Maps
-release by [AlreadyOpen/world-buildings](https://github.com/AlreadyOpen/world-buildings). About 206 million buildings and
+release by [AlreadyOpen/world-buildings](https://github.com/milleleaf/world-buildings). About 206 million buildings and
 building parts.
 
 The world is split into regions (consecutive Overture files, which Overture sorts by location). One region per source
@@ -21,7 +21,7 @@ licence, never merged:
 - `index.json` (dataset and bucket): the release, the tile layer (`buildings`) and every region with its `source`, `bbox`,
   row count and tile URL. Start here.
 - Dataset `v/<release>/<region>/*.parquet`: GeoParquet (WGS84), every Overture field plus `source` and `check`.
-- Bucket [alreadyopen/world-buildings](https://huggingface.co/buckets/alreadyopen/world-buildings) `v/<release>/<region>.pmtiles`:
+- Bucket [alreadyopen/world-buildings](https://huggingface.co/buckets/milleleaf/world-buildings) `v/<release>/<region>.pmtiles`:
   vector tiles, layer `buildings`, every field, for MapLibre `fill-extrusion` (height `height`, base `min_height`).
   Zoomed out, the tallest come first (150 m+ from zoom 6, 80 m from 8, 40 m from 10, 20 m from 11, 10 m from 12); every
   building is in from zoom 13, and tiles go deeper where a city is dense, so none is dropped.

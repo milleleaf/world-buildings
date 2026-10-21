@@ -11,7 +11,7 @@ from pathlib import Path
 from huggingface_hub import HfApi, batch_bucket_files, create_bucket
 import manifest
 
-REPO = 'alreadyopen/world-buildings'
+REPO = 'milleleaf/world-buildings'
 OUT = Path(os.environ.get('SKY_DATA', Path(__file__).resolve().parent / 'data')) / 'out'
 BUCKET = f'https://huggingface.co/buckets/{REPO}/resolve'
 

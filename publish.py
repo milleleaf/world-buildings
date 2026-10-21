@@ -10,7 +10,7 @@ from huggingface_hub import HfApi, batch_bucket_files, create_bucket
 import manifest
 from skylines import OUT
 
-REPO = 'alreadyopen/world-skylines'
+REPO = 'milleleaf/world-skylines'
 
 def main():
     b = json.loads((OUT / 'build.json').read_text()); rel = b['overture']['release']

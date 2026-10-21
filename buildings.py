@@ -54,7 +54,7 @@ def height_count(url):
 def plan(a):
     CACHE.mkdir(parents=True, exist_ok=True); OUT.mkdir(parents=True, exist_ok=True)
     if a.regions:                    # add regions to the release already published, keeping every region it lists
-        idx = sk.get_json('https://huggingface.co/buckets/alreadyopen/world-buildings/resolve/index.json')
+        idx = sk.get_json('https://huggingface.co/buckets/milleleaf/world-buildings/resolve/index.json')
         own = {cc.lower() for cc in ALL_OFFICIAL} | set(OWN)
         p = {'release': idx['release'], 'regions': {r['id']: [] for r in idx['regions'] if r['id'] not in own}}
         (OUT / 'plan.json').write_text(json.dumps(p))
