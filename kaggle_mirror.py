@@ -1,6 +1,6 @@
 """Mirror the published files to a public Kaggle dataset (the same file in every Milleleaf pipeline).
 Kaggle's "Remote URL" cannot pull from Hugging Face (every HF download is a 302 to a signed URL, which Kaggle refuses), so the
-files are uploaded. Runs after publish.py as its own step with continue-on-error: Kaggle failing never blocks Hugging Face.
+files are uploaded. Runs after each region's publish (buildings.yml) as its own step with continue-on-error: Kaggle failing never blocks Hugging Face.
 Needs KAGGLE_API_TOKEN (Helen's token, as a repo secret). The dataset is owned by her account: a Kaggle group cannot own one.
 Description = hf/README.md (or $CARD) without its YAML header; licence "other" (per-file terms are in the description).
 Usage: python3 kaggle_mirror.py <owner/slug> "<title, 6-50 chars>" <file>...    (files are uploaded by base name)"""

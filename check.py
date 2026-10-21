@@ -10,7 +10,7 @@ for s in src:
     missing = {'name', 'owner', 'url', 'licence'} - s.keys()
     assert not missing, f'{s.get("name")}: missing {missing}'
     assert s['url'].startswith('https://') and s['licence'].startswith('https://'), f'{s["name"]}: url and licence must be https links'
-for c in ('hf/README.md', 'hf/world-buildings.md'):                    # world-skylines card, world-buildings card
+for c in ('hf/world-buildings.md',):                                 # the dataset card
     card = open(c, encoding='utf-8').read()
     for s in src:
         assert s['owner'] in card, f'{c} does not credit {s["owner"]}'
