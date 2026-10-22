@@ -1,7 +1,7 @@
 """Publish world-buildings (buildings.py) to Hugging Face. Needs HF_TOKEN (alreadyopen-ci).
   region <id>   after `buildings.py region|official <id>`: uploads that region under a versioned path, so nothing live changes
-                dataset alreadyopen/world-buildings  v/<release>/<id>/*.parquet (every field, one file per Overture file)
-                bucket  alreadyopen/world-buildings  v/<release>/<id>.pmtiles (layer `buildings`)
+                dataset milleleaf/world-buildings  v/<release>/<id>/*.parquet (every field, one file per Overture file)
+                bucket  milleleaf/world-buildings  v/<release>/<id>.pmtiles (layer `buildings`)
                 writes out/<id>.pub.json (counts, bbox, sha256) for finalize
   finalize      with every out/*.pub.json: gate (manifest.py), then index.json + manifest.json at the root of both, last.
                 /map reads index.json: {release, layer, regions: [{id, source, bbox, rows, tiles}]}.
